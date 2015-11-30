@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     e.preventDefault();
 
-    var access_token = '0404f5c8ba65a2b8d90fdbdda358a3e68058da23';
+    var access_token = ("%ACCESS_TOKEN_JQ%");
     var url = 'https://api.github.com/users/' + $('input.username').val() + "?access_token=" + access_token;
 
     var template = $('template').html();
