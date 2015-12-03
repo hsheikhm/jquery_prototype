@@ -13,19 +13,22 @@
     </form>
 
     <main class="container">
+      <p id="repos"></p>
     </main>
 
     <template>
       <article class="profile">
         <section class="pic">
-          <img src={{avatar_url}}>
+          <img class="avatar" src={{avatar_url}}>
         </section>
 
         <section class="stats">
           <a href={{html_url}}>{{login}}</a>
 
-          Repos: {{public_repos}}
+
+
           Followers: {{followers}}
+          Location: {{location}}
 
         </section>
       </article>
